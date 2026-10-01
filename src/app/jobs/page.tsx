@@ -269,7 +269,7 @@ export default function AllJobsPage() {
   };
 
   // General help WhatsApp link
-  const generalHelpWhatsAppUrl = `https://wa.me/918700917348?text=Hi%20Trendy%20Fortune%2C%20I%20need%20help%20finding%20jobs.`;
+  const generalHelpWhatsAppUrl = `https://wa.me/${CONTACT_INFO.phoneRaw}?text=Hi%20Trendy%20Fortune%2C%20I%20need%20help%20finding%20jobs.`;
 
   return (
     <>

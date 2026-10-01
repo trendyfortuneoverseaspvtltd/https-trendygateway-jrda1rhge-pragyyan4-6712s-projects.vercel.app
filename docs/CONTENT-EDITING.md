@@ -16,12 +16,14 @@ Open the constants file and modify the values in the `CONTACT_INFO` object:
 ```typescript
 // src/constants/index.ts
 export const CONTACT_INFO = {
-  phone: "+91 9220809078",                                                     // Displayed in text
-  phoneRaw: "+919220809078",                                                  // Triggered on "Call Now" anchors
+  phone: "+91 9836552876",                                                     // Displayed in text
+  phoneRaw: "+919836552876",                                                  // Triggered on "Call Now" anchors
+  phoneSecondary: "+91 7069629622",
+  phoneSecondaryRaw: "+917069629622",
   email: "info@trendyfortune.com",                                             // Displayed & triggered on mailto: anchors
-  address: "Plot No. 42, Sector 11, CBD Belapur, Navi Mumbai, Maharashtra...", // Physical office text
-  whatsappUrl: "https://wa.me/919220809078?text=...",                          // Link pre-filled texts
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=..."                      // Google Maps iframe URL
+  address: "2nd floor Vraj Raj Complex, Near Uma Cross Road, Waghodia Road, Vadodara - 390019", // Physical office text
+  whatsappUrl: "https://wa.me/919836552876?text=...",                          // Link pre-filled texts
+  mapEmbedUrl: "https://maps.google.com/maps?..."                              // Google Maps iframe URL
 };
 ```
 

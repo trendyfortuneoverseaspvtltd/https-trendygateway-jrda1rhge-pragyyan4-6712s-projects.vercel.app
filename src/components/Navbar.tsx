@@ -135,26 +135,21 @@ export function Navbar() {
               <a
                 href="/#home"
                 onClick={(e) => handleScrollTo(e, "/#home")}
-                className="flex items-center gap-3 group focus:outline-none"
+                className="flex flex-col items-center group focus:outline-none"
               >
-                <div className="relative h-11 w-11 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
+                <div className="relative h-10 w-[185px] group-hover:scale-[1.02] transition-transform flex items-center justify-center shrink-0">
                   <Image
-                    src="/images/Untitled design (2).png"
-                    alt="Trendy Fortune Overseas logo"
+                    src="/images/gateway-trendy-horizontal-dark.png"
+                    alt="Gateway Trendy logo"
                     fill
-                    sizes="44px"
+                    sizes="185px"
                     className="object-contain"
                     priority
                   />
                 </div>
-                <div className="flex flex-col items-start select-none">
-                  <span className="font-serif font-extrabold text-base lg:text-[17px] text-[#B8945E] uppercase tracking-wide leading-none" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                    TRENDY FORTUNE
-                  </span>
-                  <span className="font-serif text-[10px] lg:text-[11px] text-[#B8945E] uppercase tracking-[0.18em] text-center leading-none mt-1.5" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                    OVERSEAS
-                  </span>
-                </div>
+                <span className="text-[10px] text-slate-400 font-sans tracking-tight font-medium mt-1 select-none leading-none text-center w-[185px]">
+                  (formerly known as <span className="text-[#B8945E] font-semibold">Trendy Fortune</span>)
+                </span>
               </a>
             </div>
 
@@ -240,26 +235,21 @@ export function Navbar() {
             <a
               href="/#home"
               onClick={(e) => handleScrollTo(e, "/#home")}
-              className="flex items-center gap-2 xs:gap-3 group focus:outline-none min-w-0"
+              className="flex flex-col items-center group focus:outline-none min-w-0"
             >
-              <div className="relative h-9 w-9 xs:h-10 xs:w-10 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
+              <div className="relative h-8 w-[145px] xs:h-9 xs:w-[160px] group-hover:scale-[1.02] transition-transform flex items-center justify-center shrink-0">
                 <Image
-                  src="/images/Untitled design (2).png"
-                  alt="Trendy Fortune Overseas logo"
+                  src="/images/gateway-trendy-horizontal-dark.png"
+                  alt="Gateway Trendy logo"
                   fill
-                  sizes="(max-width: 479px) 36px, 40px"
+                  sizes="(max-width: 479px) 145px, 160px"
                   className="object-contain"
                   priority
                 />
               </div>
-              <div className="flex flex-col items-start select-none min-w-0">
-                <span className="font-serif font-extrabold text-[10.5px] xs:text-[12px] sm:text-[14px] text-[#B8945E] uppercase tracking-wide leading-none truncate" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                  TRENDY FORTUNE
-                </span>
-                <span className="font-serif text-[7.5px] xs:text-[8px] sm:text-[9.5px] text-[#B8945E] uppercase tracking-[0.18em] text-center leading-none mt-1 sm:mt-1.5 truncate" style={{ fontFamily: "'Times New Roman', Times, serif" }}>
-                  OVERSEAS
-                </span>
-              </div>
+              <span className="text-[8px] xs:text-[9px] text-slate-400 font-sans tracking-tight leading-none mt-1 truncate select-none text-center w-full">
+                (formerly known as <span className="text-[#B8945E] font-medium">Trendy Fortune</span>)
+              </span>
             </a>
           </div>
 

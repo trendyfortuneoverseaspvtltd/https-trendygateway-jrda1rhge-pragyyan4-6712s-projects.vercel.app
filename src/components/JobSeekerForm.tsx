@@ -184,7 +184,7 @@ export function JobSeekerForm({
   };
 
   const getSuccessWhatsAppLink = (appId: string) => {
-    const phone = "918700917348";
+    const phone = "919836552876";
     const text = `Hi Trendy Fortune, I submitted my application. My Application ID is ${appId.trim().replace(/\s+/g, "")}. I want to continue the process.`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
   };
@@ -418,7 +418,7 @@ export function JobSeekerForm({
                 Payment gateway will be available soon. Our team can also assist you on WhatsApp to complete your payment.
               </p>
               <a
-                href={`https://wa.me/918700917348?text=${encodeURIComponent(
+                href={`https://wa.me/919836552876?text=${encodeURIComponent(
                   `Hi Trendy Fortune, I submitted my application. My Application ID is ${cleanId}. I want to complete the payment.`
                 )}`}
                 target="_blank"

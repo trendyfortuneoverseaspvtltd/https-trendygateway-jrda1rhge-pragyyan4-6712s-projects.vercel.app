@@ -61,20 +61,23 @@ export function ContactSection() {
               {/* Contact Items List */}
               <div className="space-y-4">
                 {/* Phone Call */}
-                <a
-                  href={`tel:${CONTACT_INFO.phoneRaw}`}
-                  className="flex items-center gap-4 p-4 rounded-2xl border border-slate-100 hover:border-[#B6925B] hover:bg-[#B6925B]/5 group transition-all"
-                >
+                <div className="flex items-center gap-4 p-4 rounded-2xl border border-slate-100 hover:border-[#B6925B] hover:bg-[#B6925B]/5 group transition-all">
                   <div className="bg-slate-100 text-[#0B192C] group-hover:bg-[#0B192C] group-hover:text-white transition-all p-3 rounded-xl shrink-0">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
                     <h4 className="font-display font-bold text-xs text-slate-400 uppercase tracking-wider">{t("call")}</h4>
-                    <p className="font-sans font-bold text-base md:text-lg text-[#0B192C] group-hover:text-[#B6925B] transition-colors mt-0.5">
-                      {CONTACT_INFO.phone}
-                    </p>
+                    <div className="flex flex-wrap items-center gap-x-2 font-sans font-bold text-base md:text-lg text-[#0B192C] mt-0.5">
+                      <a href={`tel:${CONTACT_INFO.phoneRaw}`} className="hover:text-[#B6925B] transition-colors">
+                        {CONTACT_INFO.phone}
+                      </a>
+                      <span className="text-slate-300">/</span>
+                      <a href={`tel:${CONTACT_INFO.phoneSecondaryRaw}`} className="hover:text-[#B6925B] transition-colors">
+                        {CONTACT_INFO.phoneSecondary}
+                      </a>
+                    </div>
                   </div>
-                </a>
+                </div>
 
                 {/* Email Direct */}
                 <a
@@ -132,7 +135,7 @@ export function ContactSection() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Trendy Fortune Mumbai Office Coordinates"
+              title="Trendy Fortune Vadodara Office Coordinates"
               aria-label="Google Map location showing Trendy Fortune Office"
             />
           </motion.div>

@@ -27,13 +27,19 @@ export interface Step {
 }
 
 export const CONTACT_INFO = {
-  phone: "+91 8700917348",
-  phoneRaw: "+918700917348",
+  phone: "+91 9836552876",
+  phoneRaw: "+919836552876",
+  phoneSecondary: "+91 7069629622",
+  phoneSecondaryRaw: "+917069629622",
+  phones: [
+    { label: "+91 9836552876", raw: "+919836552876" },
+    { label: "+91 7069629622", raw: "+917069629622" },
+  ],
   email: "info@trendyfortune.com",
-  address: "Office No-C616-C617, NoidaOne Tower C, Sector 62, Noida, U.P. - 201309",
-  whatsappUrl: "https://wa.me/918700917348?text=Hi%20Trendy%20Fortune%2C%20I%20want%20to%20know%20more%20about%20overseas%20jobs.",
-  whatsappNumber: "+91 8700917348",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1384021571477!2d77.3621457!3d28.6255734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a5d1cb37ab%3A0x6b8bc27f10b777a2!2sNoidaOne%20Tower%20C%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201309!5e0!3m2!1sen!2sin!4v1716768393849!5m2!1sen!2sin"
+  address: "2nd floor Vraj Raj Complex, Near Uma Cross Road, Waghodia Road, Vadodara - 390019",
+  whatsappUrl: "https://wa.me/919836552876?text=Hi%20Trendy%20Fortune%2C%20I%20want%20to%20know%20more%20about%20overseas%20jobs.",
+  whatsappNumber: "+91 9836552876",
+  mapEmbedUrl: "https://maps.google.com/maps?q=2nd+floor+Vraj+Raj+Complex+near+uma+cross+road+waghodia+road+vadodara+390019&t=&z=15&ie=UTF8&iwloc=&output=embed"
 };
 
 export const COUNTRIES: Country[] = [

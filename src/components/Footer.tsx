@@ -60,18 +60,18 @@ export function Footer() {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-6">
-            <a href="#home" onClick={(e) => handleScrollTo(e, "#home")} className="flex items-center gap-3 group focus:outline-none">
-              <div className="relative h-11 w-11 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
+            <a href="#home" onClick={(e) => handleScrollTo(e, "#home")} className="inline-flex flex-col items-start group focus:outline-none">
+              <div className="relative h-12 w-[214px] group-hover:scale-[1.02] transition-transform flex items-center justify-start">
                 <Image
-                  src="/images/Untitled design (2).png"
-                  alt="Trendy Fortune Overseas logo"
+                  src="/images/gateway-trendy-horizontal-dark.png"
+                  alt="Gateway Trendy logo"
                   fill
-                  sizes="44px"
-                  className="object-contain"
+                  sizes="214px"
+                  className="object-contain object-left"
                 />
               </div>
-              <span className="font-display font-bold text-xl text-white tracking-tight">
-                Trendy <span className="text-[#B6925B]">Fortune</span>
+              <span className="text-xs text-slate-400 font-sans mt-1.5 font-medium select-none text-center w-[214px]">
+                (formerly known as <span className="text-[#B6925B] font-semibold">Trendy Fortune</span>)
               </span>
             </a>
             <p className="text-sm text-slate-400 font-sans leading-relaxed max-w-sm">
@@ -149,9 +149,14 @@ export function Footer() {
             <ul className="space-y-3.5 text-sm font-sans">
               <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-[#B6925B] shrink-0 mt-1" />
-                <a href={`tel:${CONTACT_INFO.phoneRaw}`} className="hover:text-white transition-colors">
-                  {CONTACT_INFO.phone}
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href={`tel:${CONTACT_INFO.phoneRaw}`} className="hover:text-white transition-colors">
+                    {CONTACT_INFO.phone}
+                  </a>
+                  <a href={`tel:${CONTACT_INFO.phoneSecondaryRaw}`} className="hover:text-white transition-colors">
+                    {CONTACT_INFO.phoneSecondary}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-[#B6925B] shrink-0 mt-1" />

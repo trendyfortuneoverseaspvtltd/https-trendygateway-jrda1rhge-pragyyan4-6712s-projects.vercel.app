@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { CONTACT_INFO } from "@/constants";
 
 // Morning slots
 const MORNING_SLOTS = ["10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM"];
@@ -311,7 +312,7 @@ function AppointmentBookingFlow() {
   };
 
   const getWhatsAppLink = (appId: string | undefined, appointmentId: string) => {
-    const phone = "918700917348";
+    const phone = "919836552876";
     const cleanApptId = appointmentId.trim().replace(/\s+/g, "");
     const cleanAppId = appId?.trim().replace(/\s+/g, "");
     
@@ -592,7 +593,7 @@ function AppointmentBookingFlow() {
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Office Location</p>
                   <p className="text-sm font-semibold mt-1">
-                    Office No-C616-C617, NoidaOne Tower C, Sector 62, Noida, U.P. - 201309
+                    {CONTACT_INFO.address}
                   </p>
                 </div>
               </div>
@@ -697,7 +698,7 @@ function AppointmentBookingFlow() {
             <span>{isSubmitting ? t("bookingText") : t("bookBtn")}</span>
           </Button>
           <a
-            href="https://wa.me/918700917348?text=Hi%20Trendy%20Fortune%2C%20I%20want%20to%20book%20an%20appointment."
+            href="https://wa.me/919836552876?text=Hi%20Trendy%20Fortune%2C%20I%20want%20to%20book%20an%20appointment."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-2 h-12 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-sm transition-all active:scale-[0.98] cursor-pointer font-sans"

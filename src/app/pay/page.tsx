@@ -25,6 +25,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/toast";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { CONTACT_INFO } from "@/constants";
 
 // ------------------------------------------------------------------
 // Types
@@ -184,13 +185,13 @@ function PaymentFlow() {
   // WhatsApp link builders
   // ----------------------------------------------------------------
   const getPaymentWhatsAppLink = (appId: string) => {
-    const phone = "918700917348";
+    const phone = "919836552876";
     const text = `Hi Trendy Fortune, I want help with payment for my Application ID ${appId}.`;
     return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
   };
 
   const getHelpWhatsAppLink = () => {
-    const phone = "918700917348";
+    const phone = "919836552876";
     const text = "Hi Trendy Fortune, I need help with my application payment process.";
     return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
   };
@@ -560,8 +561,12 @@ function PaymentFlow() {
           <p className="text-xs text-slate-400 font-semibold uppercase tracking-wide">Need help with payment?</p>
           <p className="text-sm font-semibold text-[#0B192C] mt-1.5">
             Call or WhatsApp us at{" "}
-            <a href="tel:+918700917348" className="text-[#B6925B] hover:underline font-bold" translate="no">
-              +91 8700917348
+            <a href={`tel:${CONTACT_INFO.phoneRaw}`} className="text-[#B6925B] hover:underline font-bold" translate="no">
+              {CONTACT_INFO.phone}
+            </a>
+            {" or "}
+            <a href={`tel:${CONTACT_INFO.phoneSecondaryRaw}`} className="text-[#B6925B] hover:underline font-bold" translate="no">
+              {CONTACT_INFO.phoneSecondary}
             </a>
           </p>
         </div>

@@ -119,19 +119,19 @@ export default function RootLayout({
     "description": "Overseas recruitment agency supplying skilled technical manpower and work permit visa support.",
     "@id": "https://www.trendyfortune.com/#agency",
     "url": "https://www.trendyfortune.com",
-    "telephone": CONTACT_INFO.phone,
+    "telephone": [CONTACT_INFO.phone, CONTACT_INFO.phoneSecondary],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": CONTACT_INFO.address.split(",")[0],
-      "addressLocality": "Navi Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400614",
+      "streetAddress": "2nd floor Vraj Raj Complex, Near Uma Cross Road, Waghodia Road",
+      "addressLocality": "Vadodara",
+      "addressRegion": "Gujarat",
+      "postalCode": "390019",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.028387,
-      "longitude": 73.016335
+      "latitude": 22.2965,
+      "longitude": 73.2386
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
